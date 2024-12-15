@@ -1,19 +1,19 @@
-import { InlineCode } from "@/once-ui/components";
+import { SmartLink } from "@/once-ui/components";
 
 const person = {
-    firstName: 'Selene',
-    lastName:  'Yu',
+    firstName: 'Anthony',
+    lastName:  'Hewitt',
     get name() {
         return `${this.firstName} ${this.lastName}`;
     },
-    role:      'Design Engineer',
+    role:      'B.S. Software Engineering',
     avatar:    '/images/avatar.jpg',
-    location:  'Asia/Jakarta',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-    languages: ['English', 'Bahasa']  // optional: Leave the array empty if you don't want to display languages
+    location:  'San Diego',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+    languages: []  // optional: Leave the array empty if you don't want to display languages
 }
 
 const newsletter = {
-    display: true,
+    display: false,
     title: <>Subscribe to {person.firstName}'s Newsletter</>,
     description: <>I occasionally write about design, technology, and share thoughts on the intersection of creativity and engineering.</>
 }
@@ -24,31 +24,28 @@ const social = [
     {
         name: 'GitHub',
         icon: 'github',
-        link: 'https://github.com/once-ui-system/nextjs-starter',
+        link: 'https://github.com/anthew',
     },
     {
         name: 'LinkedIn',
         icon: 'linkedin',
-        link: 'https://www.linkedin.com/company/once-ui/',
-    },
-    {
-        name: 'X',
-        icon: 'x',
-        link: '',
-    },
-    {
-        name: 'Email',
-        icon: 'email',
-        link: 'mailto:example@gmail.com',
+        link: 'https://www.linkedin.com/in/anthony-m-hewitt/',
     },
 ]
 
 const home = {
     label: 'Home',
     title: `${person.name}'s Portfolio`,
-    description: `Portfolio website showcasing my work as a ${person.role}`,
-    headline: <>Design engineer and builder</>,
-    subline: <>I'm Selene, a design engineer at <InlineCode>FLY</InlineCode>, where I craft intuitive<br/> user experiences. After hours, I build my own projects.</>
+    description: `Portfolio website showcasing my work, education, and projects`,
+    headline: <>Designer, Developer, Problem Solver</>,
+    subline: <>I'm Anthony, a recent graduate from 
+        <SmartLink
+        href="https://www.csusm.edu"
+        target="_blank"
+        >
+        CSUSM
+        </SmartLink>
+        with a Bachelor's degree in <strong>Software Engineering</strong>.</>
 }
 
 const about = {
@@ -63,42 +60,58 @@ const about = {
         display: true
     },
     calendar: {
-        display: true,
+        display: false,
         link: 'https://cal.com'
     },
     intro: {
         display: true,
         title: 'Introduction',
-        description: <>Selene is a Jakarta-based design engineer with a passion for transforming complex challenges into simple, elegant design solutions. Her work spans digital interfaces, interactive experiences, and the convergence of design and technology.</>
+        description: <>Anthony is a software engineer from San Diego with a passion for full-stack web development and object-oriented programming.</>
     },
     work: {
         display: true, // set to false to hide this section
         title: 'Work Experience',
         experiences: [
             {
-                company: 'FLY',
-                timeframe: '2022 - Present',
-                role: 'Senior Design Engineer',
+                company: 'Sales Associate',
+                timeframe: 'November 2024 - Present',
+                role: 'Vans',
                 achievements: [
-                    <>Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user engagement and 30% faster load times.</>,
-                    <>Spearheaded the integration of AI tools into design workflows, enabling designers to iterate 50% faster.</>
+                    <>Provide personalized customer service through proactive engagement and product recommendations</>,
+                    <>Implement detailed store procedures and inventory protocols to maximize efficiency</>
                 ],
                 images: [ // optional: leave the array empty if you don't want to display images
-                    {
-                        src: '/images/projects/project-01/cover-01.jpg',
-                        alt: 'Once UI Project',
-                        width: 16,
-                        height: 9
-                    }
-                ]
+                    ]
             },
             {
-                company: 'Creativ3',
-                timeframe: '2018 - 2022',
-                role: 'Lead Designer',
+                company: 'Software Engineer Intern',
+                timeframe: 'June - September 2024',
+                role: 'Transportation Management & Design, Inc.',
                 achievements: [
-                    <>Developed a design system that unified the brand across multiple platforms, improving design consistency by 40%.</>,
-                    <>Led a cross-functional team to launch a new product line, contributing to a 15% increase in overall company revenue.</>
+                    <>Engineered a no-code system for designing and deploying transit surveys concurrently as Next.js websites.</>,
+                    <>Automated survey creation by dynamically converting Word document inputs to JavaScript code.</>,
+                    <>Integrated MongoDB Atlas for scalable survey data storage and retrieval.</>
+                ],
+                images: [ // optional: leave the array empty if you don't want to display images
+                    ]
+            },
+            {
+                company: 'Student Assistant at CSUSM Library Circulation Desk',
+                timeframe: 'August 2021 - May 2024',
+                role: 'California State University San Marcos',
+                achievements: [
+                    <>Provided detailed guidance to patrons on the features and functionalities of library software.</>,
+                    <>Managed library records and facilitated efficient item circulation for accurate tracking and availability.</>
+                ],
+                images: [ ]
+            },
+            {
+                company: 'Learning Assistant for Calculus I',
+                timeframe: 'January - May 2021',
+                role: 'California State University San Marcos',
+                achievements: [
+                    <>Enhanced college students' understanding of calculus by employing probing questions and active listening during tutoring sessions.</>,
+                    <>Led interactive group discussions on Zoom to address questions and foster collaborative learning.</>
                 ],
                 images: [ ]
             }
@@ -106,15 +119,11 @@ const about = {
     },
     studies: {
         display: true, // set to false to hide this section
-        title: 'Studies',
+        title: 'Education',
         institutions: [
             {
-                name: 'University of Jakarta',
-                description: <>Studied software engineering.</>,
-            },
-            {
-                name: 'Build the Future',
-                description: <>Studied online marketing and personal branding.</>,
+                name: 'California State University San Marcos',
+                description: <>Bachelor of Science in Software Engineering (3.72 GPA)</>,
             }
         ]
     },
@@ -123,36 +132,14 @@ const about = {
         title: 'Technical skills',
         skills: [
             {
-                title: 'Figma',
-                description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
-                // optional: leave the array empty if you don't want to display images
-                images: [
-                    {
-                        src: '/images/projects/project-01/cover-02.jpg',
-                        alt: 'Project image',
-                        width: 16,
-                        height: 9
-                    },
-                    {
-                        src: '/images/projects/project-01/cover-03.jpg',
-                        alt: 'Project image',
-                        width: 16,
-                        height: 9
-                    },
-                ]
+                title: 'Object-Oriented Programming',
+                description: <>Java, C++, Design patterns, UML diagramming</>,
+                images: []
             },
             {
-                title: 'Next.js',
-                description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
-                // optional: leave the array empty if you don't want to display images
-                images: [
-                    {
-                        src: '/images/projects/project-01/cover-04.jpg',
-                        alt: 'Project image',
-                        width: 16,
-                        height: 9
-                    },
-                ]
+                title: 'Full-stack Web Development',
+                description: <>Next.js, Document Object Model (DOM), React, Database design, SQL</>,
+                images: []
             }
         ]
     }
@@ -167,9 +154,9 @@ const blog = {
 }
 
 const work = {
-    label: 'Work',
+    label: 'Projects',
     title: 'My projects',
-    description: `Design and dev projects by ${person.name}`
+    description: `Projects by ${person.name}`
     // Create new project pages by adding a new .mdx file to app/blog/posts
     // All projects will be listed on the /home and /work routes
 }
