@@ -1,4 +1,4 @@
-const baseURL = 'localhost:3000'
+const baseURL = 'anthonyhewitt.dev'
 
 // Enable localization
 const i18n = false;

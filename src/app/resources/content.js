@@ -123,7 +123,10 @@ const about = {
         institutions: [
             {
                 name: 'California State University San Marcos',
-                description: <>Bachelor of Science in Software Engineering (3.72 GPA)</>,
+                description: <>Bachelor of Science in Software Engineering
+                <br />
+                Magna Cum Laude (3.72 GPA)
+                </>,
             }
         ]
     },
