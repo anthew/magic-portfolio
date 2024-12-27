@@ -88,9 +88,9 @@ const about = {
                 timeframe: 'June - September 2024',
                 role: 'Transportation Management & Design, Inc.',
                 achievements: [
-                    <>Engineered a no-code system for designing and deploying transit surveys concurrently as Next.js websites.</>,
-                    <>Automated survey creation by dynamically converting Word document inputs to JavaScript code.</>,
-                    <>Integrated MongoDB Atlas for scalable survey data storage and retrieval.</>
+                    <>Engineered a no-code system for designing and deploying transit surveys concurrently as Next.js websites</>,
+                    <>Created automation tool that converts text inputs into customized JavaScript code</>,
+                    <>Integrated MongoDB Atlas for scalable survey data storage and retrieval</>
                 ],
                 images: [ // optional: leave the array empty if you don't want to display images
                     ]
@@ -100,8 +100,8 @@ const about = {
                 timeframe: 'August 2021 - May 2024',
                 role: 'California State University San Marcos',
                 achievements: [
-                    <>Provided detailed guidance to patrons on the features and functionalities of library software.</>,
-                    <>Managed library records and facilitated efficient item circulation for accurate tracking and availability.</>
+                    <>Provided detailed guidance to patrons on the features and functionalities of library software</>,
+                    <>Managed library records and facilitated efficient item circulation for accurate tracking and availability</>
                 ],
                 images: [ ]
             },
@@ -110,8 +110,8 @@ const about = {
                 timeframe: 'January - May 2021',
                 role: 'California State University San Marcos',
                 achievements: [
-                    <>Enhanced college students' understanding of calculus by employing probing questions and active listening during tutoring sessions.</>,
-                    <>Led interactive group discussions on Zoom to address questions and foster collaborative learning.</>
+                    <>Enhanced college students' understanding of calculus by employing probing questions and active listening during tutoring sessions</>,
+                    <>Led interactive group discussions on Zoom to address questions and foster collaborative learning</>
                 ],
                 images: [ ]
             }
@@ -135,13 +135,23 @@ const about = {
         title: 'Technical Skills',
         skills: [
             {
-                title: 'Object-Oriented Programming',
-                description: <>Java, C++, Design patterns, UML diagramming</>,
+                title: 'Web Development',
+                description: <>HTML, CSS, JavaScript, Document Object Model, Node.js, Next.js, Once UI</>,
                 images: []
             },
             {
-                title: 'Full-stack Web Development',
-                description: <>Next.js, Document Object Model (DOM), React, Database design, SQL</>,
+                title: 'Object-Oriented Programming',
+                description: <>Java, C++, design patterns, UML diagramming</>,
+                images: []
+            },
+            {
+                title: 'Data Science',
+                description: <>Python, SQL, data cleaning, data wrangling, statistical analysis, data visualization</>,
+                images: []
+            },
+            {
+                title: 'Cloud Computing',
+                description: <>AWS (IoT, EC2), Google Cloud (Compute Engine, App Engine, Cloud SQL)</>,
                 images: []
             }
         ]
